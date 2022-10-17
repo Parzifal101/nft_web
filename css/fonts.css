@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Fixture";
-  src: url("/../font/Fixture/Fixture Expanded Bold.otf");
+  src: url("../font/Fixture/Fixture Expanded Bold.otf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Fixture";
-  src: url("/../font/Fixture/Fixture Expanded Regular.otf");
+  src: url("../font/Fixture/Fixture Expanded Regular.otf");
   font-weight: normal;
   font-style: normal;
 }/*# sourceMappingURL=fonts.css.map */
