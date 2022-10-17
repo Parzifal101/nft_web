@@ -110,7 +110,31 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    const button = document.querySelector('#menu-btn'),
+        headerMenu = document.querySelector('nav ul');
 
+    const rights = document.createElement('div');
+
+    rights.innerHTML = "";
+    button.classList.remove('open');
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (button.classList.contains('open')) {
+            button.classList.remove('open');
+            button.classList.add('close');
+            headerMenu.style.opacity = "0%";
+            headerMenu.style.display = "none";
+
+        } else {
+            button.classList.remove('close');
+            button.classList.add('open');
+
+            headerMenu.style.display = 'block';
+            headerMenu.classList.add('navOpen');
+
+        }
+    });
 
     // const marqueeContentDown = document.querySelector('.wellcome-container__down-partners');
 
