@@ -201,7 +201,7 @@ header nav .underline-container .underline {
   display: inline-block;
   width: 100%;
   height: 20px;
-  background: url(/img/underline.png) no-repeat;
+  background: url(../img/underline.png) no-repeat;
   background-size: contain;
   transition: all 1s;
   opacity: 0%;
@@ -960,6 +960,13 @@ header .header-icons .header-icons__wallet {
   }
 }
 @media screen and (max-device-width: 470px) {
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Fixture", sans-serif;
+  }
   :root {
     --marquee-elements-displayed: 2;
     --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));

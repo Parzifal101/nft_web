@@ -121,7 +121,7 @@ header nav .underline-container .underline {
   display: inline-block;
   width: 100%;
   height: 20px;
-  background: url(/img/underline.png) no-repeat;
+  background: url(../img/underline.png) no-repeat;
   background-size: contain;
   transition: all 1s;
   opacity: 0%;

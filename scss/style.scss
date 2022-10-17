@@ -634,6 +634,13 @@
             }
             
             @media screen and (max-device-width: 470px) {
+                body {
+                    min-height: 100vh;
+                    scroll-behavior: smooth;
+                    text-rendering: optimizeSpeed;
+                    line-height: 1.5;
+                    font-family: 'Fixture', sans-serif;
+                }
                  :root {
                     --marquee-elements-displayed: 2;
                     --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));
