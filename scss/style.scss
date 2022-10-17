@@ -1,0 +1,800 @@
+            @import "reset.scss";
+            @import "header.scss";
+            @import "variables.scss";
+            @import "fonts.scss";
+            .wellcome-container {
+                width: 100%;
+                height: 1764px;
+                margin-left: auto;
+                margin-right: auto;
+                background: url(/img/bg-main.jpg);
+                background-size: 100% 100%;
+                .wellcome-container__wrapper {
+                    width: 72%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    #star1 {
+                        top: 132px;
+                    }
+                    #star2 {
+                        width: 18px;
+                        height: 18px;
+                        top: 182px;
+                        right: 640px;
+                        transform: rotate(45deg);
+                    }
+                    #star3 {
+                        width: 32px;
+                        height: 32px;
+                        top: 342px;
+                        right: 500px;
+                    }
+                    #star4 {
+                        width: 32px;
+                        height: 32px;
+                        top: 620px;
+                        left: 440px;
+                        transform: rotate(32deg);
+                    }
+                    .wellcome-container__star-pink {
+                        position: absolute;
+                        width: 48px;
+                        height: 48px;
+                        background: url(/img/star_2.png);
+                        background-size: cover;
+                    }
+                    .wellcome-container__star-green {
+                        position: absolute;
+                        width: 48px;
+                        height: 48px;
+                        background: url(/img/star_3.png);
+                        background-size: cover;
+                    }
+                    .wellcome-container__circle {
+                        position: absolute;
+                        width: 22px;
+                        height: 22px;
+                        border: 2px solid #9347ce;
+                        border-radius: 50%;
+                    }
+                    #circle1 {
+                        top: 412px;
+                        left: 440px;
+                    }
+                    #circle2 {
+                        width: 12px;
+                        height: 12px;
+                        top: 190px;
+                        right: 300px;
+                        background-color: #9347ce;
+                    }
+                    .wellcome-container__round-sqr {
+                        position: absolute;
+                        width: 72px;
+                        height: 200px;
+                        border: 2px solid #9347ce;
+                        border-radius: 52px;
+                    }
+                    #circle3 {
+                        top: 480px;
+                        right: 256px;
+                    }
+                    #circle4 {
+                        width: 64px;
+                        height: 64px;
+                        top: 770px;
+                        right: 370px;
+                    }
+                    #circle5 {
+                        width: 93px;
+                        height: 38px;
+                        top: 1144px;
+                        left: 428px;
+                    }
+                    #circle6 {
+                        width: 93px;
+                        height: 276px;
+                        top: 980px;
+                        left: 237px;
+                    }
+                    #circle7 {
+                        width: 32px;
+                        height: 32px;
+                        top: 1365px;
+                        right: 514px;
+                    }
+                    .scroll-up {
+                        display: none;
+                        position: fixed;
+                        width: 64px;
+                        height: 64px;
+                        background-color: #9347ce;
+                        border-radius: 50%;
+                        top: 820px;
+                        right: 120px;
+                        cursor: pointer;
+                        img {
+                            width: 30%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            display: block;
+                        }
+                    }
+                }
+                .wellcome-container__t-span {
+                    width: 34%;
+                    color: #AF60ED;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 4%;
+                }
+                .wellcome-container__main-head {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: rgb(255, 255, 255);
+                    font-size: $fz-header__pc;
+                    text-align: center;
+                    padding-top: 2rem;
+                }
+                .wellcome-container__monkey-img {
+                    position: relative;
+                    width: 32%;
+                    height: 720px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background: url(/img/monkey-main.png);
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 220px 220px 220px 220px;
+                    margin-top: 4%;
+                    z-index: 2;
+                }
+                .wellcome-container__monkey-downlayer {
+                    position: absolute;
+                    width: 17%;
+                    height: 550px;
+                    right: 634px;
+                    top: 690px;
+                    border-radius: 220px 220px 220px 220px;
+                    margin-top: 4%;
+                    z-index: 1;
+                    background: linear-gradient(180deg, rgba(79, 75, 81, 0.23) 0%, #937FA3 63.54%, #CAAAE2 100%);
+                }
+                .wellcome-container__head-img {
+                    display: inline-block;
+                    width: 18%;
+                    height: 90px;
+                    background: url(/img/sculpture.jpg) no-repeat;
+                    background-size: 50%;
+                    background-position-x: center;
+                    background-position-y: center;
+                    overflow: hidden;
+                    background-color: #DFE0E4;
+                    border-radius: 80px 80px 80px 80px;
+                    transition: all 1s;
+                }
+                .wellcome-container__head-img2 {
+                    display: inline-block;
+                    width: 28%;
+                    height: 90px;
+                    background: url(/img/space-texture.jpg) no-repeat;
+                    background-size: 100%;
+                    background-position-x: center;
+                    background-position-y: center;
+                    overflow: hidden;
+                    background-color: #DFE0E4;
+                    border-radius: 80px 80px 80px 80px;
+                    transition: all 1s;
+                }
+                .wellcome-container__discover {
+                    width: 22%;
+                    color: #fff;
+                    text-align: right;
+                    margin-top: 6%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        display: inline-block;
+                        width: 48%;
+                        font-size: 16px;
+                    }
+                    @keyframes rotateImg {
+                        0% {}
+                    }
+                    .wellcome-container__img-wrapper {
+                        display: inline-block;
+                        width: 28%;
+                        transform: rotate(180deg);
+                        transition: all 5s;
+                        margin-left: 6%;
+                    }
+                }
+                .wellcome-container__hapebeast {
+                    position: absolute;
+                    right: 320px;
+                    top: 1000px;
+                    width: 12%;
+                    color: #fff;
+                    span {
+                        color: #AF60ED;
+                    }
+                }
+                .wellcome-container__partners {
+                    width: 100%;
+                    height: 300px;
+                    margin-top: 7%;
+                    margin-bottom: 4%;
+                    padding-top: 2rem;
+                    .partners__logo-wrapper {
+                        width: 222px;
+                        height: 72px;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 var(--marquee-element-width);
+                        flex: 0 0 var(--marquee-element-width);
+                        color: #fff;
+                        font-size: 26px;
+                        padding: 0px 10px;
+                        img {
+                            object-fit: contain;
+                            -webkit-box-flex: 0;
+                            -ms-flex: 0 0 32px;
+                            flex: 0 0 182px;
+                            // height: 52px;
+                            margin: 0px 20px 0px 0px;
+                        }
+                    }
+                    .wellcome-container__up-partners {
+                        width: 100%;
+                        display: flex;
+                        position: absolute;
+                        transition: all 1s;
+                        animation: scrolling var(--marquee-animation-duration) linear infinite;
+                    }
+                    .wellcome-container__down-partners {
+                        width: 100%;
+                        display: flex;
+                        position: absolute;
+                        top: 1720px;
+                        transition: all 1s;
+                        animation: scrollingRight var(--marquee-animation-duration) linear infinite;
+                    }
+                }
+            }
+            
+             :root {
+                --marquee-elements-displayed: 4;
+                --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));
+                --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+            }
+            
+            @keyframes scrolling {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+                }
+            }
+            
+            @keyframes scrollingRight {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+                }
+            }
+            
+            .trading-nft {
+                width: 100%;
+                height: 1120px;
+                margin-left: auto;
+                margin-right: auto;
+                button {
+                    display: block;
+                    width: 10%;
+                    height: 64px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 6%;
+                    font-family: 'Fixture', sans-serif;
+                    color: #fff;
+                    font-size: 18px;
+                    background: linear-gradient(0deg, #B271B1 0%, #5B3C5C 56.25%, rgba(47, 33, 50, 0.55) 100%);
+                    ;
+                    border: none;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    transition: all 0.7s;
+                }
+                .btn-downlayer {
+                    width: 4%;
+                    height: 5px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-radius: 0px 0px 4px 4px;
+                    background-color: #FCA1FC;
+                    transition: all 0.7s;
+                }
+                .btn-downlayer:hover {
+                    width: 6%;
+                }
+                .trading-nft__wrapper {
+                    width: 72%;
+                    height: 340px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 4%;
+                    h1 {
+                        color: #fff;
+                        font-size: 60px;
+                    }
+                    p {
+                        width: 40%;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: normal;
+                        margin-top: 1rem;
+                    }
+                    .trading-nft__pink-sticker {
+                        width: 17%;
+                        position: relative;
+                        right: -1100px;
+                        top: -150px;
+                    }
+                }
+                .trading-nft__slider {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    // background-color: #937FA3;
+                    .slider__item {
+                        width: 16%;
+                        height: 360px;
+                        background: radial-gradient(79.8% 85.08% at 49.88% 94.76%, #C67DC4 7.97%, rgba(198, 125, 196, 0.481862) 39.56%, rgba(198, 125, 196, 0) 100%);
+                        border-radius: 8%;
+                        display: inline-block;
+                        // transform: rotate(180deg);
+                        transition: all 1s;
+                        cursor: pointer;
+                        img {
+                            width: 50%;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            transition: all 1s;
+                        }
+                        &:hover {
+                            width: 22%;
+                            height: 520px;
+                        }
+                        img:hover {
+                            width: 80%;
+                        }
+                    }
+                    .slider__item-central {
+                        width: 22%;
+                        height: 520px;
+                        background: radial-gradient(79.8% 85.08% at 49.88% 94.76%, #C67DC4 7.97%, rgba(198, 125, 196, 0.481862) 39.56%, rgba(198, 125, 196, 0) 100%);
+                        border-radius: 8%;
+                        display: inline-block;
+                        // transform: rotate(180deg);
+                    }
+                }
+            }
+            
+            .stay-container {
+                width: 100%;
+                height: 800px;
+                background: url(/img//monkey-squad.png);
+                background-size: 100% 100%;
+                box-shadow: inset 0px 260px 300px 0px;
+                color: #141118
+            }
+            
+            .stay-wrapper {
+                width: 72%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 16%;
+                .stay-wrapper__input {
+                    width: 42%;
+                    height: 42px;
+                    border: 2px solid #fff;
+                    border-radius: 24px;
+                    background-color: rgba(113, 34, 120, 0.4);
+                    color: #fff;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    padding-left: 2%;
+                }
+            }
+            
+            .stay-wrapper__t {
+                color: white;
+                font-size: 60px;
+                font-weight: 1000;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+            
+            .stay-wrapper__t2 {
+                margin-top: 1%;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+            
+            .create-nft__container {
+                width: 100%;
+                // height: 1120px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 6%;
+                .create-nft__wrapper {
+                    width: 72%;
+                    // height: 340px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 4%;
+                    h1 {
+                        color: #fff;
+                        font-size: 60px;
+                    }
+                    span {
+                        width: 40%;
+                        color: #AF60ED;
+                        font-size: 20px;
+                        font-weight: normal;
+                    }
+                    .create-nft__steps {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10%;
+                        #not-choose {
+                            .steps-item__add-info1 {
+                                display: none;
+                            }
+                            .steps-item__add-info2 {
+                                display: none;
+                            }
+                            .steps-item__add-info3 {
+                                display: none;
+                            }
+                            .steps-item__add-info4 {
+                                display: none;
+                            }
+                        }
+                        #choose {
+                            width: 60%;
+                            height: 540px;
+                            position: relative;
+                            top: -98px;
+                            span {
+                                width: 86%;
+                                margin-bottom: 10px;
+                            }
+                            hr {
+                                opacity: 0%;
+                            }
+                            .steps-item__set-up {
+                                display: none;
+                            }
+                            .steps-item__add-info1 {
+                                // display: none;
+                                position: relative;
+                                width: 100%;
+                                height: 85%;
+                                border-radius: 0px 00px 20px 20px;
+                                background: url(/img/privazka.png);
+                                background-size: cover;
+                                padding-top: 32%;
+                                padding-left: 6%;
+                                padding-right: 6%;
+                                color: #fff;
+                                h2 {
+                                    width: 40%;
+                                    font-size: 26px;
+                                }
+                                span {
+                                    font-size: 16px;
+                                    margin-top: 0%;
+                                    display: inline;
+                                }
+                                p {
+                                    margin-top: 4%;
+                                    font-size: 16px;
+                                }
+                            }
+                            .steps-item__add-info2 {
+                                // display: none;
+                                position: relative;
+                                width: 100%;
+                                height: 85%;
+                                border-radius: 0px 00px 20px 20px;
+                                background: url(/img/monkey-alone2.png);
+                                background-size: cover;
+                                padding-top: 32%;
+                                padding-left: 6%;
+                                padding-right: 6%;
+                                color: #fff;
+                                h2 {
+                                    width: 40%;
+                                    font-size: 26px;
+                                }
+                                span {
+                                    font-size: 16px;
+                                    margin-top: 0%;
+                                    display: inline;
+                                }
+                                p {
+                                    margin-top: 4%;
+                                    font-size: 16px;
+                                }
+                            }
+                            .steps-item__add-info3 {
+                                // display: none;
+                                position: relative;
+                                width: 100%;
+                                height: 85%;
+                                border-radius: 0px 00px 20px 20px;
+                                background: url(/img/add.png);
+                                background-size: cover;
+                                padding-top: 32%;
+                                padding-left: 6%;
+                                padding-right: 6%;
+                                color: #fff;
+                                h2 {
+                                    width: 40%;
+                                    font-size: 26px;
+                                }
+                                span {
+                                    font-size: 16px;
+                                    margin-top: 0%;
+                                    display: inline;
+                                }
+                                p {
+                                    margin-top: 4%;
+                                    font-size: 16px;
+                                }
+                            }
+                            .steps-item__add-info4 {
+                                // display: none;
+                                position: relative;
+                                width: 100%;
+                                height: 85%;
+                                border-radius: 0px 00px 20px 20px;
+                                background: url(/img/listing.png);
+                                background-size: cover;
+                                padding-top: 32%;
+                                padding-left: 6%;
+                                padding-right: 6%;
+                                color: #fff;
+                                h2 {
+                                    width: 40%;
+                                    font-size: 26px;
+                                }
+                                span {
+                                    font-size: 16px;
+                                    margin-top: 0%;
+                                    display: inline;
+                                }
+                                p {
+                                    margin-top: 4%;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .steps-item {
+                            width: 22%;
+                            height: 440px;
+                            border: 2px solid #AF60ED;
+                            border-radius: 20px;
+                            margin-left: 2%;
+                            transition: all 0.5s;
+                            cursor: pointer;
+                            .steps-item__set-up {
+                                width: 104%;
+                                color: #fff;
+                                transform: rotate(90deg);
+                                font-size: 22px;
+                                margin-top: 60%;
+                            }
+                            span {
+                                width: 28%;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                font-size: 32px;
+                                margin-top: 2%;
+                            }
+                            hr {
+                                width: 70%;
+                                border: 1px solid #AF60ED;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-device-width: 1440px) {
+                .wellcome-container__main-head {
+                    font-size: $fz-header__laptop;
+                }
+            }
+            
+            @media screen and (max-device-width: 430px) {
+                 :root {
+                    --marquee-elements-displayed: 2;
+                    --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));
+                    --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+                }
+                .wellcome-container {
+                    height: 1520px;
+                    .wellcome-container__partners {
+                        // display: none;
+                        .partners__logo-wrapper {
+                            height: 34px;
+                            padding: 0px 14px;
+                        }
+                        .wellcome-container__up-partners {
+                            top: 1400px;
+                        }
+                        .wellcome-container__down-partners {
+                            top: 1500px;
+                        }
+                    }
+                    .wellcome-container__wrapper {
+                        width: 87%;
+                        #circle6 {
+                            top: 1018px;
+                            left: 46px;
+                        }
+                        #circle4 {
+                            right: 12px;
+                        }
+                        .wellcome-container__t-span {
+                            width: 58%;
+                            font-size: 12px;
+                            padding-top: 2rem;
+                            text-align: center;
+                        }
+                        // .wellcome-container__star-pink {
+                        //     width: 32px;
+                        //     height: 32px;
+                        // }
+                        .wellcome-container__main-head {
+                            width: 100%;
+                            font-size: 28px;
+                            h1 {
+                                position: relative;
+                                z-index: 2;
+                            }
+                        }
+                        .wellcome-container__head-img {
+                            // display: none;
+                            position: absolute;
+                            width: 26%;
+                            height: 32px;
+                            left: 20px;
+                            top: 146px;
+                        }
+                        .wellcome-container__head-img2 {
+                            position: absolute;
+                            width: 26%;
+                            height: 32px;
+                            right: 20px;
+                            top: 146px;
+                            // display: none;
+                        }
+                        .wellcome-container__discover {
+                            width: 90%;
+                            color: #fff;
+                            text-align: left;
+                            margin-top: 7%;
+                            p {
+                                font-size: 12px;
+                            }
+                            .wellcome-container__img-wrapper {
+                                margin-left: 23%;
+                            }
+                        }
+                        .wellcome-container__monkey-img {
+                            width: 90%;
+                            height: 490px;
+                            margin-top: 54%;
+                        }
+                        .wellcome-container__monkey-downlayer {
+                            width: 71%;
+                            height: 420px;
+                            right: 100px;
+                            display: none;
+                        }
+                        .wellcome-container__hapebeast {
+                            width: 52%;
+                            top: 1220px;
+                            right: 14px;
+                            text-align: right;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .trading-nft {
+                    height: 1500px;
+                    button {
+                        width: 64%;
+                        margin-top: 22%;
+                    }
+                    .btn-downlayer {
+                        width: 24%;
+                    }
+                    .trading-nft__slider {
+                        display: block;
+                        .slider__item {
+                            // display: block;
+                            width: 49.4%;
+                            height: 260px;
+                        }
+                        .slider__item-central {
+                            width: 100%;
+                            height: 420px;
+                        }
+                    }
+                    .trading-nft__wrapper {
+                        width: 87%;
+                        height: 250px;
+                        h1 {
+                            font-size: 42px;
+                            margin-top: 1rem;
+                        }
+                        p {
+                            width: 100%;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .create-nft__container {
+                    .create-nft__wrapper {
+                        width: 87%;
+                        span {
+                            font-size: 16px;
+                        }
+                        h1 {
+                            font-size: 42px;
+                        }
+                        .create-nft__steps {
+                            display: block;
+                            #not-choose {
+                                .steps-item__add-info1 {
+                                    display: block;
+                                }
+                                .steps-item__add-info2 {
+                                    display: block;
+                                }
+                                .steps-item__add-info3 {
+                                    display: none;
+                                }
+                                .steps-item__add-info4 {
+                                    display: none;
+                                }
+                            }
+                            #choose {
+                                width: 100%;
+                                top: -10px;
+                                margin-top: 12%;
+                                margin-left: 0%;
+                            }
+                        }
+                    }
+                }
+            }

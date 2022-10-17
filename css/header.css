@@ -1,0 +1,158 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #1A161F;
+}
+header .header-wrapper {
+  width: 72%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 2%;
+}
+header .header-wrapper span {
+  color: #fff;
+}
+header .logo {
+  display: inline-block;
+  width: 64px;
+}
+header nav {
+  width: 52%;
+  display: inline-block;
+  margin-left: 42%;
+}
+header nav .mobile-icon {
+  width: 32px;
+  display: inline-block;
+  margin-right: 6%;
+}
+header nav #menu-btn {
+  display: none;
+  position: relative;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  z-index: 2;
+}
+header nav #menu-btn:before, header nav #menu-btn:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #FFF;
+  display: block;
+  position: absolute;
+  border-radius: 20px;
+}
+header nav #menu-btn:before {
+  transform-origin: left center;
+}
+header nav #menu-btn:after {
+  right: 0;
+  top: 12px;
+  transform-origin: right center;
+}
+header nav #menu-btn .text {
+  color: #FFF;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+header nav #menu-btn:hover {
+  cursor: pointer;
+}
+header nav #menu-btn.open:before {
+  -webkit-animation: topBar_open 1s ease-in-out;
+          animation: topBar_open 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header nav #menu-btn.open:after {
+  -webkit-animation: bottomBar_open 1s ease-in-out;
+          animation: bottomBar_open 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header nav #menu-btn.open .text {
+  -webkit-animation: menuLabel_open 1s ease-in;
+          animation: menuLabel_open 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header nav #menu-btn.close:before {
+  -webkit-animation: topBar_close 1s ease-in-out;
+          animation: topBar_close 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header nav #menu-btn.close:after {
+  -webkit-animation: bottomBar_close 1s ease-in-out;
+          animation: bottomBar_close 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header nav #menu-btn.close .text {
+  -webkit-animation: menuLabel_close 1s ease-in;
+          animation: menuLabel_close 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header nav li {
+  display: inline-block;
+  color: #fff;
+  padding-left: 8%;
+  cursor: pointer;
+  transition: all 1s;
+}
+header nav .underline-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .underline-container .underline {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  background: url(/img/underline.png) no-repeat;
+  background-size: contain;
+  transition: all 1s;
+  opacity: 0%;
+}
+header nav .underline-container #under1 {
+  margin-left: 7%;
+}
+header nav .underline-container #under2 {
+  margin-left: 0%;
+}
+header nav .underline-container #under3 {
+  margin-right: 4%;
+}
+header nav .underline-container #under4 {
+  margin-right: 8%;
+}
+header .header-icons {
+  width: 12%;
+}
+header .header-icons .header-icons__person {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 14%;
+}
+header .header-icons .header-icons__wallet {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 14%;
+}
+
+@media screen and (max-device-width: 1440px) {
+  header nav {
+    width: 68%;
+  }
+}/*# sourceMappingURL=header.css.map */

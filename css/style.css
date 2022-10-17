@@ -1,0 +1,960 @@
+@charset "UTF-8";
+/* НАЧАЛО СБРОСА СТИЛЕЙ */
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  white-space: normal;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+li[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  white-space: normal;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Fixture", sans-serif;
+  white-space: normal;
+  background-color: #18151E;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* КОНЕЦ СБРОСА СТИЛЕЙ */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #1A161F;
+}
+header .header-wrapper {
+  width: 72%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 2%;
+}
+header .header-wrapper span {
+  color: #fff;
+}
+header .logo {
+  display: inline-block;
+  width: 64px;
+}
+header nav {
+  width: 52%;
+  display: inline-block;
+  margin-left: 42%;
+}
+header nav li {
+  display: inline-block;
+  color: #fff;
+  padding-left: 8%;
+  cursor: pointer;
+  transition: all 1s;
+}
+header nav .underline-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .underline-container .underline {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  background: url(/img/underline.png) no-repeat;
+  background-size: contain;
+  transition: all 1s;
+  opacity: 0%;
+}
+header nav .underline-container #under1 {
+  margin-left: 7%;
+}
+header nav .underline-container #under2 {
+  margin-left: 0%;
+}
+header nav .underline-container #under3 {
+  margin-right: 4%;
+}
+header nav .underline-container #under4 {
+  margin-right: 8%;
+}
+header .header-icons {
+  width: 12%;
+}
+header .header-icons .header-icons__person {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 14%;
+}
+header .header-icons .header-icons__wallet {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 14%;
+}
+
+@media screen and (max-device-width: 1440px) {
+  header nav {
+    width: 68%;
+  }
+}
+@font-face {
+  font-family: "Fixture";
+  src: url("/font/Fixture/Fixture Expanded Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fixture";
+  src: url("/font/Fixture/Fixture Expanded Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+.wellcome-container {
+  width: 100%;
+  height: 1764px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(/img/bg-main.jpg);
+  background-size: 100% 100%;
+}
+.wellcome-container .wellcome-container__wrapper {
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wellcome-container .wellcome-container__wrapper #star1 {
+  top: 132px;
+}
+.wellcome-container .wellcome-container__wrapper #star2 {
+  width: 18px;
+  height: 18px;
+  top: 182px;
+  right: 640px;
+  transform: rotate(45deg);
+}
+.wellcome-container .wellcome-container__wrapper #star3 {
+  width: 32px;
+  height: 32px;
+  top: 342px;
+  right: 500px;
+}
+.wellcome-container .wellcome-container__wrapper #star4 {
+  width: 32px;
+  height: 32px;
+  top: 620px;
+  left: 440px;
+  transform: rotate(32deg);
+}
+.wellcome-container .wellcome-container__wrapper .wellcome-container__star-pink {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: url(/img/star_2.png);
+  background-size: cover;
+}
+.wellcome-container .wellcome-container__wrapper .wellcome-container__star-green {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: url(/img/star_3.png);
+  background-size: cover;
+}
+.wellcome-container .wellcome-container__wrapper .wellcome-container__circle {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #9347ce;
+  border-radius: 50%;
+}
+.wellcome-container .wellcome-container__wrapper #circle1 {
+  top: 412px;
+  left: 440px;
+}
+.wellcome-container .wellcome-container__wrapper #circle2 {
+  width: 12px;
+  height: 12px;
+  top: 190px;
+  right: 300px;
+  background-color: #9347ce;
+}
+.wellcome-container .wellcome-container__wrapper .wellcome-container__round-sqr {
+  position: absolute;
+  width: 72px;
+  height: 200px;
+  border: 2px solid #9347ce;
+  border-radius: 52px;
+}
+.wellcome-container .wellcome-container__wrapper #circle3 {
+  top: 480px;
+  right: 256px;
+}
+.wellcome-container .wellcome-container__wrapper #circle4 {
+  width: 64px;
+  height: 64px;
+  top: 770px;
+  right: 370px;
+}
+.wellcome-container .wellcome-container__wrapper #circle5 {
+  width: 93px;
+  height: 38px;
+  top: 1144px;
+  left: 428px;
+}
+.wellcome-container .wellcome-container__wrapper #circle6 {
+  width: 93px;
+  height: 276px;
+  top: 980px;
+  left: 237px;
+}
+.wellcome-container .wellcome-container__wrapper #circle7 {
+  width: 32px;
+  height: 32px;
+  top: 1365px;
+  right: 514px;
+}
+.wellcome-container .wellcome-container__wrapper .scroll-up {
+  display: none;
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  background-color: #9347ce;
+  border-radius: 50%;
+  top: 820px;
+  right: 120px;
+  cursor: pointer;
+}
+.wellcome-container .wellcome-container__wrapper .scroll-up img {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.wellcome-container .wellcome-container__t-span {
+  width: 34%;
+  color: #AF60ED;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
+}
+.wellcome-container .wellcome-container__main-head {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  text-align: center;
+  padding-top: 2rem;
+}
+.wellcome-container .wellcome-container__monkey-img {
+  position: relative;
+  width: 32%;
+  height: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(/img/monkey-main.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 220px 220px 220px 220px;
+  margin-top: 4%;
+  z-index: 2;
+}
+.wellcome-container .wellcome-container__monkey-downlayer {
+  position: absolute;
+  width: 17%;
+  height: 550px;
+  right: 634px;
+  top: 690px;
+  border-radius: 220px 220px 220px 220px;
+  margin-top: 4%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(79, 75, 81, 0.23) 0%, #937FA3 63.54%, #CAAAE2 100%);
+}
+.wellcome-container .wellcome-container__head-img {
+  display: inline-block;
+  width: 18%;
+  height: 90px;
+  background: url(/img/sculpture.jpg) no-repeat;
+  background-size: 50%;
+  background-position-x: center;
+  background-position-y: center;
+  overflow: hidden;
+  background-color: #DFE0E4;
+  border-radius: 80px 80px 80px 80px;
+  transition: all 1s;
+}
+.wellcome-container .wellcome-container__head-img2 {
+  display: inline-block;
+  width: 28%;
+  height: 90px;
+  background: url(/img/space-texture.jpg) no-repeat;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  overflow: hidden;
+  background-color: #DFE0E4;
+  border-radius: 80px 80px 80px 80px;
+  transition: all 1s;
+}
+.wellcome-container .wellcome-container__discover {
+  width: 22%;
+  color: #fff;
+  text-align: right;
+  margin-top: 6%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.wellcome-container .wellcome-container__discover p {
+  display: inline-block;
+  width: 48%;
+  font-size: 16px;
+}
+@-webkit-keyframes rotateImg {}
+@keyframes rotateImg {}
+.wellcome-container .wellcome-container__discover .wellcome-container__img-wrapper {
+  display: inline-block;
+  width: 28%;
+  transform: rotate(180deg);
+  transition: all 5s;
+  margin-left: 6%;
+}
+.wellcome-container .wellcome-container__hapebeast {
+  position: absolute;
+  right: 320px;
+  top: 1000px;
+  width: 12%;
+  color: #fff;
+}
+.wellcome-container .wellcome-container__hapebeast span {
+  color: #AF60ED;
+}
+.wellcome-container .wellcome-container__partners {
+  width: 100%;
+  height: 300px;
+  margin-top: 7%;
+  margin-bottom: 4%;
+  padding-top: 2rem;
+}
+.wellcome-container .wellcome-container__partners .partners__logo-wrapper {
+  width: 222px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 var(--marquee-element-width);
+  color: #fff;
+  font-size: 26px;
+  padding: 0px 10px;
+}
+.wellcome-container .wellcome-container__partners .partners__logo-wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  flex: 0 0 182px;
+  margin: 0px 20px 0px 0px;
+}
+.wellcome-container .wellcome-container__partners .wellcome-container__up-partners {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  transition: all 1s;
+  -webkit-animation: scrolling var(--marquee-animation-duration) linear infinite;
+          animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+.wellcome-container .wellcome-container__partners .wellcome-container__down-partners {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 1720px;
+  transition: all 1s;
+  -webkit-animation: scrollingRight var(--marquee-animation-duration) linear infinite;
+          animation: scrollingRight var(--marquee-animation-duration) linear infinite;
+}
+
+:root {
+  --marquee-elements-displayed: 4;
+  --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+}
+
+@-webkit-keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+@-webkit-keyframes scrollingRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+@keyframes scrollingRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+.trading-nft {
+  width: 100%;
+  height: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.trading-nft button {
+  display: block;
+  width: 10%;
+  height: 64px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 6%;
+  font-family: "Fixture", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  background: linear-gradient(0deg, #B271B1 0%, #5B3C5C 56.25%, rgba(47, 33, 50, 0.55) 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.trading-nft .btn-downlayer {
+  width: 4%;
+  height: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #FCA1FC;
+  transition: all 0.7s;
+}
+.trading-nft .btn-downlayer:hover {
+  width: 6%;
+}
+.trading-nft .trading-nft__wrapper {
+  width: 72%;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
+}
+.trading-nft .trading-nft__wrapper h1 {
+  color: #fff;
+  font-size: 60px;
+}
+.trading-nft .trading-nft__wrapper p {
+  width: 40%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+.trading-nft .trading-nft__wrapper .trading-nft__pink-sticker {
+  width: 17%;
+  position: relative;
+  right: -1100px;
+  top: -150px;
+}
+.trading-nft .trading-nft__slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trading-nft .trading-nft__slider .slider__item {
+  width: 16%;
+  height: 360px;
+  background: radial-gradient(79.8% 85.08% at 49.88% 94.76%, #C67DC4 7.97%, rgba(198, 125, 196, 0.481862) 39.56%, rgba(198, 125, 196, 0) 100%);
+  border-radius: 8%;
+  display: inline-block;
+  transition: all 1s;
+  cursor: pointer;
+}
+.trading-nft .trading-nft__slider .slider__item img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s;
+}
+.trading-nft .trading-nft__slider .slider__item:hover {
+  width: 22%;
+  height: 520px;
+}
+.trading-nft .trading-nft__slider .slider__item img:hover {
+  width: 80%;
+}
+.trading-nft .trading-nft__slider .slider__item-central {
+  width: 22%;
+  height: 520px;
+  background: radial-gradient(79.8% 85.08% at 49.88% 94.76%, #C67DC4 7.97%, rgba(198, 125, 196, 0.481862) 39.56%, rgba(198, 125, 196, 0) 100%);
+  border-radius: 8%;
+  display: inline-block;
+}
+
+.stay-container {
+  width: 100%;
+  height: 800px;
+  background: url(/img//monkey-squad.png);
+  background-size: 100% 100%;
+  box-shadow: inset 0px 260px 300px 0px;
+  color: #141118;
+}
+
+.stay-wrapper {
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16%;
+}
+.stay-wrapper .stay-wrapper__input {
+  width: 42%;
+  height: 42px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  background-color: rgba(113, 34, 120, 0.4);
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 2%;
+}
+
+.stay-wrapper__t {
+  color: white;
+  font-size: 60px;
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.stay-wrapper__t2 {
+  margin-top: 1%;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.create-nft__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6%;
+}
+.create-nft__container .create-nft__wrapper {
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
+}
+.create-nft__container .create-nft__wrapper h1 {
+  color: #fff;
+  font-size: 60px;
+}
+.create-nft__container .create-nft__wrapper span {
+  width: 40%;
+  color: #AF60ED;
+  font-size: 20px;
+  font-weight: normal;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info1 {
+  display: none;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info2 {
+  display: none;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info3 {
+  display: none;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info4 {
+  display: none;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose {
+  width: 60%;
+  height: 540px;
+  position: relative;
+  top: -98px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose span {
+  width: 86%;
+  margin-bottom: 10px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose hr {
+  opacity: 0%;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__set-up {
+  display: none;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info1 {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  border-radius: 0px 0px 20px 20px;
+  background: url(/img/privazka.png);
+  background-size: cover;
+  padding-top: 32%;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: #fff;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info1 h2 {
+  width: 40%;
+  font-size: 26px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info1 span {
+  font-size: 16px;
+  margin-top: 0%;
+  display: inline;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info1 p {
+  margin-top: 4%;
+  font-size: 16px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info2 {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  border-radius: 0px 0px 20px 20px;
+  background: url(/img/monkey-alone2.png);
+  background-size: cover;
+  padding-top: 32%;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: #fff;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info2 h2 {
+  width: 40%;
+  font-size: 26px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info2 span {
+  font-size: 16px;
+  margin-top: 0%;
+  display: inline;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info2 p {
+  margin-top: 4%;
+  font-size: 16px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info3 {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  border-radius: 0px 0px 20px 20px;
+  background: url(/img/add.png);
+  background-size: cover;
+  padding-top: 32%;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: #fff;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info3 h2 {
+  width: 40%;
+  font-size: 26px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info3 span {
+  font-size: 16px;
+  margin-top: 0%;
+  display: inline;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info3 p {
+  margin-top: 4%;
+  font-size: 16px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info4 {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  border-radius: 0px 0px 20px 20px;
+  background: url(/img/listing.png);
+  background-size: cover;
+  padding-top: 32%;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: #fff;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info4 h2 {
+  width: 40%;
+  font-size: 26px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info4 span {
+  font-size: 16px;
+  margin-top: 0%;
+  display: inline;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps #choose .steps-item__add-info4 p {
+  margin-top: 4%;
+  font-size: 16px;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps .steps-item {
+  width: 22%;
+  height: 440px;
+  border: 2px solid #AF60ED;
+  border-radius: 20px;
+  margin-left: 2%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps .steps-item .steps-item__set-up {
+  width: 104%;
+  color: #fff;
+  transform: rotate(90deg);
+  font-size: 22px;
+  margin-top: 60%;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps .steps-item span {
+  width: 28%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32px;
+  margin-top: 2%;
+}
+.create-nft__container .create-nft__wrapper .create-nft__steps .steps-item hr {
+  width: 70%;
+  border: 1px solid #AF60ED;
+}
+
+@media screen and (max-device-width: 1440px) {
+  .wellcome-container__main-head {
+    font-size: 48px;
+  }
+}
+@media screen and (max-device-width: 430px) {
+  :root {
+    --marquee-elements-displayed: 2;
+    --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
+  }
+  .wellcome-container {
+    height: 1520px;
+  }
+  .wellcome-container .wellcome-container__partners .partners__logo-wrapper {
+    height: 34px;
+    padding: 0px 14px;
+  }
+  .wellcome-container .wellcome-container__partners .wellcome-container__up-partners {
+    top: 1400px;
+  }
+  .wellcome-container .wellcome-container__partners .wellcome-container__down-partners {
+    top: 1500px;
+  }
+  .wellcome-container .wellcome-container__wrapper {
+    width: 87%;
+  }
+  .wellcome-container .wellcome-container__wrapper #circle6 {
+    top: 1018px;
+    left: 46px;
+  }
+  .wellcome-container .wellcome-container__wrapper #circle4 {
+    right: 12px;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__t-span {
+    width: 58%;
+    font-size: 12px;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__main-head {
+    width: 100%;
+    font-size: 28px;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__main-head h1 {
+    position: relative;
+    z-index: 2;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__head-img {
+    position: absolute;
+    width: 26%;
+    height: 32px;
+    left: 20px;
+    top: 146px;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__head-img2 {
+    position: absolute;
+    width: 26%;
+    height: 32px;
+    right: 20px;
+    top: 146px;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__discover {
+    width: 90%;
+    color: #fff;
+    text-align: left;
+    margin-top: 7%;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__discover p {
+    font-size: 12px;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__discover .wellcome-container__img-wrapper {
+    margin-left: 23%;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__monkey-img {
+    width: 90%;
+    height: 490px;
+    margin-top: 54%;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__monkey-downlayer {
+    width: 71%;
+    height: 420px;
+    right: 100px;
+    display: none;
+  }
+  .wellcome-container .wellcome-container__wrapper .wellcome-container__hapebeast {
+    width: 52%;
+    top: 1220px;
+    right: 14px;
+    text-align: right;
+    font-size: 12px;
+  }
+  .trading-nft {
+    height: 1500px;
+  }
+  .trading-nft button {
+    width: 64%;
+    margin-top: 22%;
+  }
+  .trading-nft .btn-downlayer {
+    width: 24%;
+  }
+  .trading-nft .trading-nft__slider {
+    display: block;
+  }
+  .trading-nft .trading-nft__slider .slider__item {
+    width: 49.4%;
+    height: 260px;
+  }
+  .trading-nft .trading-nft__slider .slider__item-central {
+    width: 100%;
+    height: 420px;
+  }
+  .trading-nft .trading-nft__wrapper {
+    width: 87%;
+    height: 250px;
+  }
+  .trading-nft .trading-nft__wrapper h1 {
+    font-size: 42px;
+    margin-top: 1rem;
+  }
+  .trading-nft .trading-nft__wrapper p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .create-nft__container .create-nft__wrapper {
+    width: 87%;
+  }
+  .create-nft__container .create-nft__wrapper span {
+    font-size: 16px;
+  }
+  .create-nft__container .create-nft__wrapper h1 {
+    font-size: 42px;
+  }
+  .create-nft__container .create-nft__wrapper .create-nft__steps {
+    display: block;
+  }
+  .create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info1 {
+    display: block;
+  }
+  .create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info2 {
+    display: block;
+  }
+  .create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info3 {
+    display: none;
+  }
+  .create-nft__container .create-nft__wrapper .create-nft__steps #not-choose .steps-item__add-info4 {
+    display: none;
+  }
+  .create-nft__container .create-nft__wrapper .create-nft__steps #choose {
+    width: 100%;
+    top: -10px;
+    margin-top: 12%;
+    margin-left: 0%;
+  }
+}/*# sourceMappingURL=style.css.map */
