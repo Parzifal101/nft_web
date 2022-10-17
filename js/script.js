@@ -81,6 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 1800) {
             scrollUp.style.display = 'block';
+            console.log(window.pageYOffset)
         } else {
             scrollUp.style.display = 'none';
         }

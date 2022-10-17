@@ -633,20 +633,7 @@
                 }
             }
             
-            @media screen and (max-device-width: 430px) {
-                header {
-                    nav {
-                        #menu-btn {
-                            display: block;
-                            cursor: pointer;
-                        }
-                        .mobile-icon {
-                            // display: none;
-                            width: 32px;
-                            height: 32px;
-                        }
-                    }
-                }
+            @media screen and (max-device-width: 470px) {
                  :root {
                     --marquee-elements-displayed: 2;
                     --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));
@@ -656,6 +643,7 @@
                     height: 1520px;
                     .wellcome-container__partners {
                         // display: none;
+                        overflow-x: hidden;
                         .partners__logo-wrapper {
                             height: 34px;
                             padding: 0px 14px;
@@ -669,12 +657,26 @@
                     }
                     .wellcome-container__wrapper {
                         width: 87%;
+                        .scroll-up {
+                            left: 20px;
+                            top: 780px;
+                            z-index: 3;
+                        }
                         #circle6 {
                             top: 1018px;
                             left: 46px;
                         }
                         #circle4 {
                             right: 12px;
+                        }
+                        #circle1 {
+                            display: none;
+                        }
+                        #circle5 {
+                            display: none;
+                        }
+                        #star4 {
+                            display: none;
                         }
                         .wellcome-container__t-span {
                             width: 58%;
@@ -773,6 +775,9 @@
                         p {
                             width: 100%;
                             font-size: 14px;
+                        }
+                        .trading-nft__pink-sticker {
+                            display: none;
                         }
                     }
                 }

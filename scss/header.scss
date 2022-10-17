@@ -1,7 +1,11 @@
+@import "variables.scss";
 header {
     width: 100%;
     height: 80px;
     background-color: #1A161F;
+    .logo-nav {
+        display: none;
+    }
     .header-wrapper {
         width: 72%;
         height: 100%;
@@ -27,7 +31,7 @@ header {
         .mobile-icon {
             width: 32px;
             display: inline-block;
-            margin-right: 6%;
+            margin-right: 0%;
         }
         #menu-btn {
             display: none;
@@ -151,6 +155,88 @@ header {
     header {
         nav {
             width: 68%;
+        }
+    }
+}
+
+@media screen and (max-device-width: 470px) {
+    header {
+        .header-icons {
+            position: absolute;
+            top: 800px;
+        }
+        .logo {
+            position: absolute;
+            display: inline-block;
+            width: 48px;
+            left: 20px;
+            top: 24px;
+        }
+        .logo-nav {
+            position: absolute;
+            display: inline-block;
+            width: 48px;
+            left: 20px;
+            top: 24px;
+        }
+        nav {
+            justify-content: space-between;
+            height: 100%;
+            #menu-btn {
+                display: block;
+                // width: 42px;
+                cursor: pointer;
+                z-index: 3;
+                .text {
+                    font-size: 8.5px;
+                }
+            }
+            .mobile-icon {
+                position: relative;
+                width: 32px;
+                height: 32px;
+                margin-top: 10%;
+                margin-left: 94%;
+                z-index: 4;
+            }
+            ul {
+                display: none;
+                position: absolute;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0%;
+                padding-left: 0%;
+                padding-top: 12%;
+                top: 0px;
+                right: 0%;
+                background-color: rgb(255, 255, 255);
+                height: 1000px;
+                opacity: 0%;
+                z-index: 3;
+                transition: all 1s;
+                &.navOpen {
+                    animation: navOpen $anim_time ease-in-out;
+                    animation-fill-mode: forwards;
+                }
+                .navOpen {
+                    padding-top: 4%;
+                }
+            }
+            li {
+                text-align: center;
+                width: 100%;
+                display: block;
+                font-size: 22px;
+                font-weight: 500;
+                padding: 0em;
+                margin-left: 0em;
+                padding-top: 14%;
+                color: #000;
+                a {
+                    color: #000;
+                }
+            }
         }
     }
 }

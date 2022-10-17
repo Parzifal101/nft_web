@@ -16,11 +16,6 @@ main {
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
 /* Убираем внешние отступы */
 body,
 h1,
@@ -50,9 +45,6 @@ body {
   font-family: "Fixture", sans-serif;
   white-space: normal;
   background-color: #18151E;
-}
-
-body {
   overflow-x: hidden;
 }
 
